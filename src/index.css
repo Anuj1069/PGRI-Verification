@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #135bec;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #101622;
+}
+
+@layer base {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+  }
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #334155;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+  }
+}
+
+@layer utilities {
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark .glass-card {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  40% { width: 100% }
+  90% { width: 100% }
+  100% { width: 0 }
+}
+
+@keyframes cursor {
+  0%, 100% { border-color: transparent }
+  50% { border-color: #135bec }
+}
+
+.animate-typing-text {
+  animation: typing 8s steps(25) infinite;
+}
+
+.animate-cursor-blink {
+  animation: cursor 0.8s step-end infinite;
+}

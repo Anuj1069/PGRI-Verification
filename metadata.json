@@ -1,0 +1,7 @@
+{
+  "name": "PRGI Verification",
+  "description": "Advanced NLP-powered title verification system for the Press Registrar General of India, ensuring unique publication identities through phonetic and semantic analysis.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
