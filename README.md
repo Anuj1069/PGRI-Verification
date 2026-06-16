@@ -1,20 +1,145 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# PGRI Verification Portal
 
-# Run and deploy your AI Studio app
+A web-based verification portal built using **Django**, **Python**, **HTML**, and **CSS** to streamline the process of verification and record management.
 
-This contains everything you need to run your app locally.
+## Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/ce0202da-2861-42d1-a81d-efda93f28fba
+🔗 https://pgri-verification.onrender.com
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Overview
 
+The PGRI Verification Portal is designed to provide an efficient and user-friendly platform for managing verification requests and records. The application features a clean interface, secure backend processing, and database integration to ensure reliable data management.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## Features
+
+* User-friendly verification interface
+* Secure form submission and validation
+* Database-driven record management
+* Responsive web design
+* Django-powered backend
+* Real-time data processing
+* Deployed and accessible online
+
+---
+
+## Tech Stack
+
+### Backend
+
+* Python
+* Django
+
+### Frontend
+
+* HTML5
+* CSS3
+
+### Database
+
+* SQLite (Update if using another database)
+
+### Deployment
+
+* Render
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Anuj1069/YOUR-REPOSITORY-NAME.git
+cd YOUR-REPOSITORY-NAME
+```
+
+### Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate Environment
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Linux/Mac:
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Apply Migrations
+
+```bash
+python manage.py migrate
+```
+
+### Run the Server
+
+```bash
+python manage.py runserver
+```
+
+Visit:
+
+```text
+http://127.0.0.1:8000/
+```
+
+---
+
+## Project Structure
+
+```text
+project/
+│
+├── app/
+├── templates/
+├── static/
+├── db.sqlite3
+├── manage.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Future Enhancements
+
+* User authentication and authorization
+* Admin analytics dashboard
+* Email verification system
+* API integration
+* Enhanced security features
+* Mobile-friendly UI improvements
+
+---
+
+## Author
+
+### Anuj Kumar Ghadia
+
+* LinkedIn: https://www.linkedin.com/in/anuj-kumar-b882ba374/
+* GitHub: https://github.com/Anuj1069
+
+---
+
+## License
+
+This project is open-source and available for educational and learning purposes.
+
